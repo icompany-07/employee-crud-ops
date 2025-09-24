@@ -38,4 +38,12 @@ public class EmployeeController {
     public void delete(@PathVariable Long id) {
         service.delete(id);
     }
+
+
+    @GetMapping
+    public String getDemo() {
+        return "Demo is Created for the purpose!";
+    }
+
+    
 }
