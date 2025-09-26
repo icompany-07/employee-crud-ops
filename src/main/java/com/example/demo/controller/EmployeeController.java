@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
@@ -42,28 +41,9 @@ public class EmployeeController {
         service.delete(id);
     }
 
-
-    @GetMapping
-    public String getDemo() {
-        return "Demo is Created for the purpose!";
-    }
-
-
-
-
-    @GetMapping("/demotask")
-    public List<String> demoList(){
-        return List.of("Aman","Syam","Raman");
-    }
-
-    @GetMapping("/newDemo")
-    public List<String> newDemoList(){
-        return List.of("chaman","Gyan","Shyam");
-    }
-
-    @GetMapping("/superman")
-    public List<String> supermanDemo(){
-        return List.of("superman","batman");
+    @GetMapping("/deskTop")
+    public List<String> desktopApp(){
+        return List.of("Desk1", "desk2","desk3");
     }
 
 
