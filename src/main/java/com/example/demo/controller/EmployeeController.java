@@ -61,5 +61,10 @@ public class EmployeeController {
         return List.of("chaman","Gyan","Shyam");
     }
 
+    @GetMapping("/superman")
+    public List<String> supermanDemo(){
+        return List.of("superman","batman");
+    }
+
 
 }
