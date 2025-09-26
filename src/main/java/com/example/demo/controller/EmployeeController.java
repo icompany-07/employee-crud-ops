@@ -56,5 +56,10 @@ public class EmployeeController {
         return List.of("Aman","Syam","Raman");
     }
 
+    @GetMapping("/newDemo")
+    public List<String> newDemoList(){
+        return List.of("chaman","Gyan","Shyam");
+    }
+
 
 }
